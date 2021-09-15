@@ -1,0 +1,237 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.wrapper {
+  max-width: 1330px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header {
+  background: url(/img/background4.jpg) no-repeat center;
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.header__burger-menu {
+  display: none;
+}
+.header__menu {
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  transition: all .3s ease;
+}
+.header__menu.sticky {
+  background: crimson;
+  padding: 15px 0;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.header__nav-list {
+  display: flex;
+}
+.header__nav-link {
+  font-family: Montserrat;
+  margin-left: 25px;
+  transition: color .3s ease;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+.header__nav-link:hover {
+  color: crimson;
+}
+.header__logo-link{
+  color: #fff;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.header__logo-link span{
+  transition: color .3s ease;
+  color: crimson;
+}
+.header__logo-link span.active {
+  color: #fff;
+}
+.header__content {
+  padding-top: 250px;
+}
+.header__home-text{
+  color: #fff;
+  font-family: Montserrat;
+}
+.header__home-text-1{
+  font-size: 27px;
+}
+.header__home-text-2{
+  font-size: 60px;
+  font-weight: 600;
+}
+.header__home-text-3{
+  font-weight: 500;
+  font-size: 40px;
+}
+.header__home-text-3 span {
+  color: crimson;
+}
+
+@media (max-width: 950px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 5;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 9px;
+    transition: 0.25s ease-in-out;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: 0.25s ease-in-out;
+  }
+  .header__burger::before{
+    top: 0;
+  }
+  .header__burger::after{
+    bottom: 0;
+  }
+  .header__nav{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #18b5a4;
+  }
+  body.overflow{
+    overflow: hidden;
+  }
+  .header__nav.active {
+    padding: 70px 10px 0 10px;
+    top: 0;
+  }
+  .header__nav-list {
+    display: block;
+  }
+  .header__nav-item {
+    margin-bottom: 20px;
+  }
+  .nav-link {
+    color: #fff;
+  }
+}
