@@ -540,6 +540,12 @@ html{
   }
 }
 @media (max-width: 691px) {
+  .header__nav-list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   .header__content {
     padding-top: 180px;
   }
@@ -552,9 +558,7 @@ html{
 }
 
 @media (max-width: 577px) {
-  .header__nav-item {
-    margin-bottom: 9px;
-  }
+
   .header__home-text-1 {
     font-size: 25px;
   }
