@@ -552,6 +552,9 @@ html{
 }
 
 @media (max-width: 577px) {
+  .header__nav-item {
+    margin-bottom: 9px;
+  }
   .header__home-text-1 {
     font-size: 25px;
   }
