@@ -541,10 +541,13 @@ html{
   }
   .my-work__card {
     width: calc(50% - 15px);
+    margin-bottom: 15px;
+  }
+  .my-work__card:last-child {
+    margin-bottom: 0px;
   }
   .my-work__content-wrapper {
     flex-wrap: wrap;
-    row-gap: 15px;
   }
 }
 
