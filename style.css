@@ -611,3 +611,10 @@ html{
     font-size: 15px;
   }
 }
+
+.love {
+  margin-top: 40px;
+  font-size: 25px;
+  font-family: Montserrat;
+  font-weight: 500;
+}
