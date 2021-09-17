@@ -549,6 +549,16 @@ html{
   .my-work__content-wrapper {
     flex-wrap: wrap;
   }
+  .my-skills__content-wrapper{
+    flex-direction: column;
+  }
+  .my-skills__left-column {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .my-skills__right-column {
+    width: 100%;
+  }
 }
 
 @media (max-width: 691px) {
@@ -595,6 +605,9 @@ html{
     font-size: 15px;
   }
   .my-work-title::after {
+    font-size: 15px;
+  }
+  .my-skills__title::after {
     font-size: 15px;
   }
 }
