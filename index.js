@@ -10,7 +10,7 @@ headerBurger.addEventListener('click',()=>{
 const headerMenu = document.querySelector('.header__menu'),
       headerLogoSpan = document.querySelector('.header__logo-span')
 
-stickyHeader = () => {
+handleScroll = () => {
   const position = window.scrollY
   if(position>20){
     headerMenu.classList.add('sticky')
@@ -19,7 +19,6 @@ stickyHeader = () => {
     headerMenu.classList.remove('sticky')
     headerLogoSpan.classList.remove('active')
   }
-  console.log(position);
 }
 
-window.addEventListener('scroll',stickyHeader)
+document.addEventListener('scroll',handleScroll)

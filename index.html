@@ -9,9 +9,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="home">
       <div class="header__menu">
         <div class="wrapper">
           <div class="header-wrapper">
@@ -26,19 +29,22 @@
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Home</a>
+            <a class="header__nav-link" href="#home">Home</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">About me</a>
+            <a class="header__nav-link" href="#about">About me</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">My work</a>
+            <a class="header__nav-link" href="#my-work">My work</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Skills</a>
+            <a class="header__nav-link" href="#skills">Skills</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Education</a>
+            <a class="header__nav-link" href="#education">Education</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#code">Code</a>
           </li>
           <li class="header__nav-item">
             <a class="header__nav-link" href="#">Contacts</a>
@@ -67,7 +73,7 @@
           </h2>
           <div class="about-me__content-wrapper">  
               <div class="about-me__column-left">
-                <img class="about-me__img" src="/img/my_avatar2.jpg">
+                <img class="about-me__img" src="/img/my-avatar6.jpg" alt="avatar">
               </div>
               <div class="about-me__column-right">
                 <div class="about-me__about-content">
@@ -76,8 +82,7 @@
                   I started studying Front-end development six months ago and as a result I have learned Js and Html at a sufficient level. I always receptive to new ideas and my chief goal is to be a proficient Front-end specialist.
                 </p>
                 <p class="about-me__about-content__text">
-                  I consider communication skills (I get on well with people), fast adaptability (I’m flexible), full involvement into working process (I’m a high-flier), professional competence as my personal strengths.
-                </p>
+                  </p>
                 <p class="about-me__about-content__text">
                   I believe my enthusiasm makes me a perfect fit to serve as a Front-end specialist.
                 </p>
@@ -87,41 +92,130 @@
           </div>
         </div>
       </section>
-      <section class="section dark-section my-work">
+      <!-- <section class="section dark-section my-work" id="my-work">
         <div class="wrapper">
           <h2 class="section-title dark-section-title my-work-title">
              My work
           </h2>
           <div class="my-work__content-wrapper">
-            <div class="my-work__card">
+            <a class="my-work__card my-work__news-card" href="https://kind-jennings-e8177a.netlify.app/" target="blank">
               <p class="my-work__card-text my-work__card-title">News</p>
               <p class="my-work__card-text my-word__card-information">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.
+                Mini React-app for getting news.<br> <span>Using technologies:</span> React and Redux
               </p>
-            </div>
-            <div class="my-work__card">
-              <p class="my-work__card-text my-work__card-title">It-school</p>
+            </a>
+            <a class="my-work__card my-work__itSchool-card" href="https://seroffim.github.io/It-school/" target="blank">
+              <p class="my-work__card-text my-work__card-title">It-school page</p>
               <p class="my-work__card-text my-word__card-information">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.
+                A landing page for It-school.<br> <span>Using technologies:</span> HTML,CSS and Flexbox layout
               </p>
-            </div>
-            <div class="my-work__card">
+            </a>
+            <a class="my-work__card">
               <p class="my-work__card-text my-work__card-title">React app</p>
               <p class="my-work__card-text my-word__card-information">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.
               </p>
-            </div>
+            </a>
           </div>
         </div>
       </section>
+      <section class="section my-skills" id="skills" >
+        <div class="wrapper">
+          <h2 class="section-title my-skills__title">
+            My skills
+          </h2>
+          <div class="my-skills__content-wrapper">
+            <div class="my-skills__left-column">
+              <h3 class="my-skills__left-column__title">My creative skills & experiences.</h3>
+              <p class="my-skills__left-column__text">I consider communication skills (I get on well with people), fast adaptability (I’m flexible), full involvement into working process (I’m a high-flier), professional competence as my personal strengths.
+              </p>
+              <p class="my-skills__left-column__english"><span>English:</span> Pre-Intermediate</p>
+            </div>
+            <ul class="my-skills__right-column">
+              <li class="my_skills__skil-item">
+                <p>HTML</p>
+                <div class="my_skills__skil-line html-line"></div>
+              </li>
+              <li class="my_skills__skil-item">
+                <p>CSS</p>
+                <div class="my_skills__skil-line css-line"></div>
+              </li>
+              <li class="my_skills__skil-item">
+                <p>Js</p>
+                <div class="my_skills__skil-line js-line"></div>
+              </li>
+              <li class="my_skills__skil-item">
+                <p>React</p>
+                <div class="my_skills__skil-line react-line"></div>
+              </li>
+              <li class="my_skills__skil-item">
+                <p>Git</p>
+                <div class="my_skills__skil-line git-line"></div>
+              </li>
+            </ul>
+          </div>
+      </div>
+      </section>
+      <section class="section dark-section education" id="education">
+        <div class="wrapper">
+          <h2 class="section-title dark-section-title education-title">
+            Education
+          </h2>
+          <div class="education__content-wrapper">
+            <ul class="education__list">
+              <li class="education__item">
+                <p class="education__item-title">Belarusian State University of Informatics and Radioelectronics</p>
+                <p class="edcuation__item-date">2019 - 2023</p>
+              </li>
+              <li class="education__item">
+                <p class="education__item-title">Html Academy</p>
+                <p class="edcuation__item-date">2020</p>
+              </li>
+              <li class="education__item">
+                <p class="education__item-title">Code-basics(JavaScript for beginners)</p>
+                <p class="edcuation__item-date">2020</p>
+              </li>
+              <li class="education__item">
+                <p class="education__item-title">React-way-of-samurai</p>
+                <p class="edcuation__item-date">2021</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section code" id="code">
+        <div class="wrapper">
+          <h2 class="section-title code__title">
+            Code example
+          </h2>
+          <div>
+            <pre>
+              <code>
+                function spinWords(string){
+                  let arr = string.split(' ')
+                  let newArr = arr.map((item)=&gt;{
+                    if(item.length&gt;=5){
+                      let i = item.length
+                      let newStr= []
+                      while(i&gt;0){
+                        newStr.push(item.slice(i-1,i))
+                        i--
+                      }
+                      return newStr.join('')
+                    }
+                    return item
+                  })
+                  return newArr.join(' ')
+                 }
+                 
+              </code>
+            </pre>
+          </div>
+        </div>
+      </section> -->
     </main>
     <footer>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt corrupti quibusdam accusamus unde commodi perferendis vel saepe rerum? Dignissimos molestiae labore perspiciatis quis voluptate quo consequatur totam obcaecati eveniet quibusdam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad commodi a debitis! Numquam accusamus libero quasi impedit dolorem voluptates nam commodi repudiandae vero aut quia, doloribus veritatis praesentium nobis eum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum magnam atque itaque! Officiis, veritatis quos. Beatae aliquid excepturi animi libero quisquam, perspiciatis quae voluptates doloribus at quasi dicta ratione atque!
-      </p>
-     
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt corrupti quibusdam accusamus unde commodi perferendis vel saepe rerum? Dignissimos molestiae labore perspiciatis quis voluptate quo consequatur totam obcaecati eveniet quibusdam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad commodi a debitis! Numquam accusamus libero quasi impedit dolorem voluptates nam commodi repudiandae vero aut quia, doloribus veritatis praesentium nobis eum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum magnam atque itaque! Officiis, veritatis quos. Beatae aliquid excepturi animi libero quisquam, perspiciatis quae voluptates doloribus at quasi dicta ratione atque!
-      </p>
+  
     </footer>
   <script src="index.js"></script>
 </body>
