@@ -442,7 +442,12 @@ html{
 .code__title::after {
   content: 'my code';
 }
-
+.love {
+  margin-top: 40px;
+  font-size: 25px;
+  font-family: Montserrat;
+  font-weight: 500;
+}
 
 
 
@@ -612,9 +617,3 @@ html{
   }
 }
 
-.love {
-  margin-top: 40px;
-  font-size: 25px;
-  font-family: Montserrat;
-  font-weight: 500;
-}
