@@ -476,6 +476,7 @@ pre code.hljs {
   color: #333;
   text-decoration: none;
   transition: all .5s ease;
+  word-break: break-all;
 }
 .contacts__item-link:hover {
   text-decoration: underline;
@@ -686,7 +687,7 @@ pre code.hljs {
     height: 350px;
   }
   .contacts-mail {
-    font-size: 13px;
+    font-size: 12px;
   }
   .contacts-title::after {
     font-size: 18px;
