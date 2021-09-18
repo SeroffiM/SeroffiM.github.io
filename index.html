@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
@@ -191,25 +191,23 @@
           </h2>
           <div>
             <pre>
-              <code class="language-javascript">
-                function spinWords(string){
-                  let arr = string.split(' ')
-                  let newArr = arr.map((item)=&gt;{
-                    if(item.length&gt;=5){
-                      let i = item.length
-                      let newStr= []
-                      while(i&gt;0){
-                        newStr.push(item.slice(i-1,i))
-                        i--
-                      }
-                      return newStr.join('')
-                    }
-                    return item
-                  })
-                  return newArr.join(' ')
-                 }
-                 
-              </code>
+              <code class="javascript">
+function spinWords(string){
+  let arr = string.split(' ')
+  let newArr = arr.map((item)=&gt;{
+  if(item.length&gt;=5){
+    let i = item.length
+    let newStr= []
+    while(i&gt;0){
+      newStr.push(item.slice(i-1,i))
+      i--
+    }
+    return newStr.join('')
+   }
+   return item
+ })
+  return newArr.join(' ')
+}</code>
             </pre>
           </div>
         </div>
