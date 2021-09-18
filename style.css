@@ -556,10 +556,13 @@ pre code.hljs {
   font-family: Montserrat;
   font-weight: 600;
 }
-.footer__contacts-link i {
-  font-size: 25px;
-  color: white;
-}
+ .footer__contacts-link {
+   text-decoration: none;
+ }
+  .footer__contacts-link i {
+    font-size: 25px;
+    color: white;
+  }
 
 @media (max-width: 950px) {
   .wrapper {
