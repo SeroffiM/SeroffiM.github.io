@@ -455,6 +455,9 @@ pre code.hljs {
 .video-section-titile::after {
   content: 'it\'s me';
 }
+.my-video__video-wrapper {
+  height: 600px;
+}
 
 
 
@@ -659,16 +662,13 @@ pre code.hljs {
   .education-title::before {
     width: 220px;
   }
-  .my-video-iframe {
-    height: 400px;
+  .my-video__video-wrapper {
+    height: 350px;
   }
 }
 
 @media (max-width: 325px) {
   .education-title::after {
     font-size: 15px;
-  }
-  .education-title::before {
-    /* width: 180px; */
   }
 }
