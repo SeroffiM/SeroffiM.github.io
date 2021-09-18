@@ -452,8 +452,9 @@ html{
 pre code.hljs {
   font-size: 18px;
 }
-
-
+.video-section-titile::after {
+  content: 'it\'s me';
+}
 
 
 
@@ -657,6 +658,9 @@ pre code.hljs {
 @media (max-width: 460px) {
   .education-title::before {
     width: 220px;
+  }
+  .my-video-iframe {
+    height: 400px;
   }
 }
 
