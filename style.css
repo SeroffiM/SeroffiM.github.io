@@ -546,7 +546,20 @@ pre code.hljs {
   background: #fff;
   color: var(--red-color);
 }
-
+.footer {
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+}
+.footer__text {
+  font-family: Montserrat;
+  font-weight: 600;
+}
+.footer__contacts-link i {
+  font-size: 25px;
+  color: white;
+}
 
 @media (max-width: 950px) {
   .wrapper {
