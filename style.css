@@ -685,6 +685,12 @@ pre code.hljs {
   .my-video__video-wrapper {
     height: 350px;
   }
+  .contacts-mail {
+    font-size: 13px;
+  }
+  .contacts-title::after {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 325px) {
