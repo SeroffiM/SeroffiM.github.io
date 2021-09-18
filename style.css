@@ -449,6 +449,10 @@ html{
   font-weight: 500;
 }
 
+pre code.hljs {
+  font-size: 18px;
+}
+
 
 
 
@@ -639,6 +643,10 @@ html{
   .edcuation__item-date {
     font-size: 15px;
   }
+  pre code.hljs {
+    font-size: initial;
+  }
+  
 }
 @media (max-width: 496px) {
   .education-title::after {
