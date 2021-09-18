@@ -458,6 +458,9 @@ pre code.hljs {
 .my-video__video-wrapper {
   height: 600px;
 }
+.contacts-title::after {
+  content: 'get in touch';
+}
 
 
 
