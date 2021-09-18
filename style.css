@@ -589,6 +589,18 @@ html{
     text-align: center;
     font-size: 19px;
   }
+  .education-title::before {
+    width: 290px;
+  }
+  .education-title::after {
+    font-size: 17px;
+  }
+  .education__item-title {
+    font-size: 20px;
+  }
+  .edcuation__item-date {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 577px) {
@@ -615,5 +627,36 @@ html{
   .my-skills__title::after {
     font-size: 15px;
   }
+  .education-title::after {
+    font-size: 15px;
+  }
+  .education-title::before {
+    width: 260px;
+  }
+  .education__item-title {
+    font-size: 18px;
+  }
+  .edcuation__item-date {
+    font-size: 15px;
+  }
+}
+@media (max-width: 496px) {
+  .education-title::after {
+    font-size: 16px;
+    bottom: -22px;
+  }
+}
+@media (max-width: 460px) {
+  .education-title::before {
+    width: 220px;
+  }
 }
 
+@media (max-width: 325px) {
+  .education-title::after {
+    font-size: 15px;
+  }
+  .education-title::before {
+    /* width: 180px; */
+  }
+}
