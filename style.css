@@ -461,9 +461,26 @@ pre code.hljs {
 .contacts-title::after {
   content: 'get in touch';
 }
-
-
-
+.contacts__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.contacts__item i {
+  color: var(--red-color);
+  font-size: 35px;
+  margin-right: 15px;
+}
+.contacts__item-link {
+  font-family: Montserrat;
+  color: #333;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+.contacts__item-link:hover {
+  text-decoration: underline;
+  color: var(--red-color);
+}
 
 
 
